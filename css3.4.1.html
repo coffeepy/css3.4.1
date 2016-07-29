@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS 3.4.1</title>
+    <style type="text/css">
+    body {
+      background-color: black;
+    }
+      .speechBubble {
+        text-align: center;
+        padding: 40px 20px 0px 20px;
+        color:black;
+        margin: 30px;
+        position: relative;
+        height: 125px;
+        width: 175px;
+        background-color: white;
+        border-radius: 30px;
+      }
+      /*.speechBubble:before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 15px 15px 15px 0;
+        border-color: transparent white;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        z-index: 1;
+        left: -15px;
+        top:45px;
+      }*/
+      .speechBubble:before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid white;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        z-index: 1;
+        left: -18px;
+        top:45px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="speechBubble">
+      <div class="words">
+        Hello,
+
+        My name is Brant, This assignment was hard, i had
+        to google for help. :)
+      </div>
+    </div>
+  </body>
+</html>
